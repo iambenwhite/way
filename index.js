@@ -30,6 +30,6 @@ controller.on('bot_channel_join', function (bot, message) {
   bot.reply(message, "I'm here!")
 })
 
-controller.hears(['where are you'], ['ambient', 'direct_message','direct_mention','mention'], function (bot, message) {
-  bot.reply(message, 'Hi, I am here.')
+controller.hears(['where are you', 'way'], ['ambient', 'direct_message','direct_mention','mention'], function (bot, message) {
+  bot.reply(message, 'Hi, I am here, do not panic.')
 })
